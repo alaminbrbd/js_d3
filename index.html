@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Bt_5_JS">
+    <meta name="description" content="Bt_5_JS">
+    <meta name="keywords" content="Bt_5_JS">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="3 days">
+    <meta name="author" content="alaminwebdev">
+    <title>Bt_5_JS_D3</title>
+    <!--css links-->
+    <!-- font -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">JavaScript DOM Exercises to Boost Your Skills</div>
+
+  <section>
+    <div class="container">
+      <!-- show text -->
+      <h2>click the button to show the text</h2>
+      <button type="button" onclick="showText()" class="btn btn-info">show text</button>
+      <p id="st"></p>
+
+
+<!-- show date --><hr>
+
+<div class="card">
+  <h5 class="card-header">Click Events</h5>
+  <div class="card-body">
+    <h5 class="card-title">click</h5>
+    <p id="sd" class="card-text">click the button to show the text</p>
+    <button type="button" onclick="showDate()"class="btn btn-primary">Show Date</button>
+  </div>
+</div>
+
+
+
+<!-- text change -->
+      <h2>click the button to change the text</h2>
+      <button type="button" onmouseenter="changeText()" class="btn btn-success">Change text</button>
+      <p id="ct">Lorem ipsum dolor sit amet.</p>
+<hr>
+<!-- text color change -->
+      <h2>click the button to change the text color</h2>
+      <button type="button" onclick="changeColor()" class="btn btn-danger">Change Color</button>
+      <p id="cc">Lorem ipsum dolor sit amet.</p>
+<hr>
+<!-- bulb on/off -->
+
+      <h2>click the button on/off the bulb</h2>
+      <button type="button" onclick="bulbOn()"class="btn btn-primary">Bulb on</button>
+      <button type="button" onclick="bulbOff()"class="btn btn-warning">Bulb off</button>
+      <img id="img" src="image/off.gif" alt="#">
+
+<hr>
+
+<!-- DOM Events -->
+      <h1 class="text-center">HTML DOM Events</h1>
+      <h2 class="text-center">The contextmenu Event</h2>
+      
+      <div style="border:1px solid black;text-align:center">
+      <p class="text-center">Right-click in this box!</p>
+      <p class="text-center">Context menu will show.</p>
+      </div>
+      <br>
+      <div id="myDiv">
+      <p class="text-center">Right-click in this box!</p>
+      <p class="text-center">Context menu is disabled.</p> 
+
+      
+</div>
+</section>
+<!-- buttons for each exercise -->
+<section>
+      <div>
+            <h2>click the button to Show Name</h2>
+            <button type="button" onclick="showName()" class="btn btn-primary" >Show Name</button>
+<hr>            
+            <h2>click the button to Show Random Number</h2>
+            <button type="button" onclick="showRandomNumber()" class="btn btn-primary" >Show Random Number</button>
+<hr>            
+            <h2>click the button to change the background color</h2>
+            <button type="button" onclick="changeBgColor()" class="btn btn-primary" >Change Background Color</button>
+<hr>           
+            <h2>click the button Sum Two Numbers</h2>
+            <button type="button" onclick="sumNumbers()" class="btn btn-primary" >Sum Two Numbers</button>
+<hr>
+            <h2>click the button Multiply Two Numbers</h2>
+            <button type="button" onclick="multiplyNumbers()" class="btn btn-primary" >Multiply Two Numbers</button>
+<hr>
+            <h2>click the button Swap Two Numbers</h2>
+            <button type="button" onclick="swapNumbers()" class="btn btn-primary" >Swap Two Numbers</button>
+<hr>            
+            <h2>click the button Show Quote</h2>
+            <button type="button" onclick="showQuote()" class="btn btn-primary" >Show Quote</button>
+            <p id="output"></p>
+
+<hr>
+            <!-- reverse Text -->
+            <button onclick="reverseText()" class="btn btn-primary">Reverse Text</button>
+            <p id="reversePara">JavaScript is fun!</p>
+<hr>
+            <!-- change Font Size -->
+            <button onclick="changeFontSize()"class="btn btn-primary">Change Font Size</button>
+            <p id="fontPara">This text will change size.</p>
+<hr>
+            <!-- make Text Bold -->
+            <button onclick="makeBold()" class="btn btn-primary">Make Text Bold</button>
+            <p id="boldPara">This text will become bold.</p>
+      </div>
+</section>
+
+<hr>
+<section>
+      <div class="container">
+            <h1 class="text-center">click the button to show the data</h1>
+            <button type="button" onclick="showData()" class="btn btn-primary" >Show Data</button>
+            <p id="showData"></p>
+            <hr>
+            <h2 class="text-center">dblclick the button to multiply result data</h2>
+            <button type="button" ondblclick="showMult()" class="btn btn-success" >Show result</button>
+            <p id="showMult"></p>
+            <hr>
+            <h2 class="text-center">onmouseover the button to div result data</h2>
+            <button type="button" onmouseover="showDiv()" class="btn btn-info" >Show result</button>
+            <p id="showDiv"></p>
+            <hr>
+            <h2 class="text-center">onmouseleave the button to show subs result</h2>
+            <button type="button" onmouseleave="showPer()" class="btn btn-danger" >Show result</button>
+            <p id="showPer"></p>
+            <hr>
+            <h2 class="text-center">onmouseenter the button to show addi result</h2>
+            <button type="button" onmouseleave="showAdd()" class="btn btn-dark" >Show result</button>
+            <p id="showAdd"></p>
+            <hr>
+            <h2 class="text-center">JavaScript String Operators</h2>
+            <button type="button" onmouseleave="showOpd()" class="btn btn-primary" >Strings are compared alpha...</button>
+            <p id="showOpd"></p>
+            <hr>
+            <h2 class="text-center">JavaScript String Operators</h2>
+            <button type="button" onmouseenter="showOpdii()" class="btn btn-dark" >Strings are compared alpha...</button>
+            <p id="showOpdii"></p>
+            <hr>
+            <h2 class="text-center">The+Operators</h2>
+            <button type="button" onmouseleave="showOpdiii()" class="btn btn-dark" >join</button>
+            <p id="showOpdiii"></p>
+            <hr>
+            <h2 class="text-center">JavaScript Addition Assignment</h2>
+            <button type="button" onclick="pErc()" class="btn btn-primary" >The % Operator</button>
+            <p id="pErc"></p>
+<hr>
+            <h2 class="text-center">JavaScript Arithmetic</h2>
+            <button type="button" onclick="pErcad()" class="btn btn-warning" >The += Operator</button>
+            <p id="pErcad"></p>
+            <hr>
+            <h2 class="text-center">Exponentiation Assignment</h2>
+            <button type="button" onclick="pErexpo()" class="btn btn-danger" >The **= Operator</button>
+            <p id="pErexpo"></p>
+<hr>
+
+<hr>
+
+
+            <h2 class="text-center">JavaScript Arrays</h2>
+            <button type="button" onmouseleave="showColors()" class="btn btn-dark">Show Colors</button>
+            <p id="arrayOutput"></p>
+<hr>
+            <h2 class="text-center">JavaScript String Methods</h2>
+            <button type="button" onmouseleave="showStringInfo()" class="btn btn-success">Show String Info</button>
+            <p id="stringOutput"></p>
+<hr>
+            <h2 class="text-center">JavaScript Const and Let</h2>
+            <button onclick="updateVariable()" class="btn btn-primary">Change Let Value</button>
+            <p id="constLetOutput"></p>
+
+            <hr>
+            <h2 class="text-center">JavaScript Loops</h2>
+            <button onclick="showFruits()" class="btn btn-danger">Show Fruits</button>
+            <ul id="loopOutput"></ul>
+            <hr>
+            <h2 class="text-center">JavaScript forEach Loop</h2>
+            <button type="button" onclick="doubleNumbers()" class="btn btn-warning">Double Numbers</button>
+            <p id="forEachOutput"></p>
+            <hr>
+            <!-- array  -->
+            <h2>click the button to showdataarray</h2>
+            <button type="button" onclick="showArray()" class="btn btn-primary" >showdataarray</button>
+            <p id="sdata5">Result</p>
+            <hr>
+            <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript Arrays</h2>
+            <h3>The at() Method</h3>
+
+            <p>Click the button to get an element from the array using the <code>at()</code> method:</p>
+            
+            <p id="resultf"></p>
+            
+            <button id="btno" class="btn btn-danger">Get color</button>
+<!--  -->
+            <h2>JavaScript For Loop</h2>
+            <p id="carList"></p>
+            <!-- Bootstrap Button -->
+            <button id="btnShowCars" class="btn btn-primary">Show Cars</button>
+            <!--  -->
+            <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">Reverse Car List</h2>
+
+            <p id="reverseCarList"></p>
+        
+            <!-- Bootstrap Button -->
+            <button id="btnReverseCars" class="btn btn-warning">Show Cars in Reverse</button>
+      
+            <h2>Random Country Selector</h2>
+
+            <p id="randomCountry"></p>
+        
+            <!-- Bootstrap Button -->
+            <button id="btnRandomCountry" class="btn btn-primary">Pick a Random Country</button>
+      
+      <!--  -->
+      <h2 class="text-center">JavaScript if..else</h2>
+      <p class="bold text-center" >A time-based greeting:</p>
+      <p class="text-center" id="greetingText"></p>
+     
+<hr>
+      <!--  -->
+      <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript Math.random()</h2>
+      <p>Click the button to get a random link:</p>
+      <p id="randomLink"></p>
+      <button id="generateBtn" class="btn btn-danger">Generate Link</button>
+<hr>
+      <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript switch Example</h2>
+      <p>Click the button to get a random animal:</p>
+      <p id="randomAnimal"></p>
+      <button class="btn btn-success" id="animalBtn">Get Animal</button>
+      
+      <hr>
+      <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript Switch Example</h2>
+      <p>The current month is:</p>
+      <p id="monthDisplay"></p>
+<hr>
+      <h2 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript While Loop Example</h2>
+      <p>List of Flowers:</p>
+      <p id="flowerList"></p>
+
+      <hr>
+      <h1 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript Boolean Values</h1>
+      <p id="booleanResult"></p>
+      
+      <hr>
+      <h1 class="text-center shadow p-3 mb-5 bg-body-tertiary rounded">Convert Fahrenheit to Celsius</h1>
+      <p>Temperature in Celsius is:</p>
+      <p id="demo1"></p>
+      
+      <hr>
+      <h1 class="shadow p-3 mb-5 bg-body-tertiary rounded">Convert Kilometers to Miles</h1>
+      <p>Distance in miles is:</p>
+      <p id="demo2"></p>
+      <hr>
+      <h2 class="shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript const</h2>
+      <p>Modifying a constant array of cities:</p>
+      <p id="demo9"></p>
+      <hr>
+      <h2 class="shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript const</h2>
+      <p>You can NOT reassign a constant object:</p>
+      <p id="errorMsg"></p>
+      <hr>
+      <h2 class="shadow p-3 mb-5 bg-body-tertiary rounded">JavaScript const</h2>
+      <p>You can NOT reassign a constant object:</p>
+      <p id="errorDisplay"></p> <!-- Changed ID name -->
+ </div>
+</section>
+
+<!--js links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
